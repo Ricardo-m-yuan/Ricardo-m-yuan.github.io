@@ -1,0 +1,936 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+
+#all {
+	width: 1920px;
+}
+
+.box {
+	width: 1920px;
+	position: relative;
+}
+
+.top_nav {
+	width: 1920px;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border-bottom: 1px solid #dddddd;
+	z-index: 10;
+	background: white;
+}
+
+.top_nav .nav_quit:hover .dark {
+	cursor: pointer;
+	transform: translateZ(-25px) rotateX(-90deg) ! important;
+}
+
+.top_nav .nav_quit:hover {
+	cursor: pointer;
+}
+
+.top_nav .dark {
+	height: 50px;
+	width: 273.2px;
+	float: left;
+	text-indent: 20px;
+	position: relative;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	margin: 0px auto;
+	transition: all .3s linear;
+}
+
+.top_nav .dark span {
+	display: inline-block;
+	width: 16px;
+	height: 3px;
+	background: #dddddd;
+	margin-left: 20px;
+	margin-bottom: 8px;
+}
+
+.top_nav .dark .white {
+	width: 273.2px;
+	height: 40px;
+	color: #858585;
+	background: white;
+	transform: rotatex(0deg) translatez(25px);
+	height: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.top_nav .dark .black {
+	color: white;
+	background: black;
+	width: 273.2px;
+	height: 50px;
+	transform: rotatex(90deg) translatez(25px);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.top_nav .dark div {
+	pointer-events: none;
+	box-sizing: border-box;
+}
+
+.top_nav .dark h4 {
+	margin-top: 10px;
+}
+
+.tool {
+	position: relative;
+	width: 100%;
+	height: 935px;
+	background: rgba(0, 0, 0, .5);
+	display: none;
+}
+
+.top_nav .nav_quit {
+	border-left: 1px solid #DDDDDD;
+	height: 50px;
+	width: 273.2px;
+	float: left;
+	text-indent: 20px;
+	position: relative;
+	z-index:50;
+}
+
+.tool .tool_winner {
+	width: 1688px;
+	height: 900px;
+	margin: 0px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.tool .tool_winner img {
+	margin-top: 50px;
+	display: block;
+	width: 1688px;
+	height: 900px;
+}
+
+.tool .tool_winner p {
+	position: absolute;
+	top: 95px;
+	left: 735.5px;
+	width: 215px;
+	height: 55px;
+	border: 2px solid white;
+	color: white;
+	text-align: center;
+	line-height: 55px;
+	font-weight: bold;
+}
+
+.tool .tool_winner p:hover {
+	background: white;
+	color: black;
+	cursor: pointer;
+}
+
+.vr {
+	width: 1920px;
+	display: none;
+}
+
+.vr .human {
+	width: 100%;
+	height: 660px;
+	background: url(img/vr360-about.jpg) 0px 50px;
+	position: relative;
+	overflow: hidden;
+}
+
+.vr .play {
+	width: 100%;
+	height: 365px;
+	background: url(img/vr360-reel.jpg);
+	position: relative;
+	text-transform: uppercase;
+	overflow: hidden;
+	background-size: cover;
+}
+
+.vr .work {
+	width: 100%;
+	height: 950px;
+	background: url(img/vr360-projects.jpg);
+	position: relative;
+	background-size: cover;
+}
+
+.vr .email {
+	width: 100%;
+	height: 535px;
+	background: url(img/vr360-contact.jpg);
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+.human p {
+	width: 580px;
+	margin-left: 190px;
+	margin-top: 20px;
+}
+
+.human .text_p1 {
+	color: red;
+	font-size: 24px;
+	margin-top: 125px;
+	text-transform: uppercase;
+}
+
+.human .text_p2 {
+	color: white;
+	font-size: 30px;
+	width: 800px;
+	transform: scale(1, 2);
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.human .text_p3 {
+	color: #B9B9BA;
+	font-size: 14px;
+	line-height: 25px;
+	font-family: "LetterGothicStd-BoldSlanted", "Lucida Console", Monaco, monospace;
+}
+
+.vr .play p {
+	border: 2px solid white;
+	color: #FEFEFE;
+	width: 180px;
+	height: 55px;
+	text-indent: 2em;
+	line-height: 55px;
+	font-size: 20px;
+	position: relative;
+	z-index: 5;
+	font-weight: bold;
+}
+
+.vr .play h1 {
+	margin: 120px 0px 0px 400px;
+	color: white;
+}
+
+.vr .play div {
+	margin: 50px 0px 0px 400px;
+	position: relative;
+	width: 184px;
+	height: 59px;
+	overflow: hidden;
+}
+
+.vr .play span {
+	position: absolute;
+	top: -65px;
+	left: -19px;
+	height: 200px;
+	width: 0px;
+	transform: rotate(25deg);
+	transition: .3s;
+	background: white;
+	z-index: 1;
+}
+
+.work .work_more {
+	width: 1200px;
+	height: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.work .work_more .logo {
+	margin-top: 150px;
+	color: #333333;
+}
+
+.work .work_more .line {
+	width: 1165px;
+	border: .5px solid #333333;
+	margin-top: 10px;
+}
+
+.work .work_more .imgs div {
+	width: 372px;
+	height: 214px;
+	float: left;
+	margin-right: 25px;
+	margin-top: 20px;
+	position: relative;
+}
+
+.work .work_more .imgs .bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .4);
+}
+
+.work .work_more .imgs .bg:hover {
+	cursor: pointer;
+}
+
+.work .work_more .imgs .text h3 {
+	color: #E74C4C;
+	font-size: 14px;
+}
+
+.work .work_more .imgs .text h1 {
+	color: white;
+	font-size: 16px;
+}
+
+.work .work_more .imgs .text {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+}
+
+.vr .email h1 {
+	color: #333333;
+	margin: 165px 0px 20px 0px;
+}
+
+.vr .email .center {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.vr .email .three_line p {
+	float: left;
+	border: .5px solid #333333;
+}
+
+.vr .email .three_line .line_p1 {
+	width: 710px;
+}
+
+.vr .email .three_line .line_p2,
+.vr .email .three_line .line_p3 {
+	width: 225px;
+	margin-left: 5px;
+}
+
+.vr .email .com p {
+	float: left;
+	margin-top: 40px;
+	color: white;
+}
+
+.vr .email .com .com_p1 {
+	font-size: 30px;
+}
+
+.vr .email .com .com_p2 {
+	margin-left: 520px;
+}
+
+.vr .email .com .com_p3 {
+	margin-left: 60px;
+}
+
+.vr .email .com .com_p3 a {
+	color: red;
+	text-decoration: none;
+}
+
+.dire {
+	position: relative;
+	top: 50px;
+	left: 0px;
+	width: 1920px;
+	background: url(img/bg-pattern.gif);
+	height: 885px;
+	overflow: hidden;
+	display: none;
+}
+
+.dire .cline {
+	transform: rotate(13deg);
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	height: 915px;
+	background: #333333;
+	width: 10px;
+	overflow: hidden;
+	z-index: 5;
+}
+
+.dire .cline span {
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	width: 50px;
+	height: 0;
+	background: #fff;
+	z-index:5;
+}
+
+.dire .left_act {
+	width: 1110px;
+	height: 897px;
+	transform: skewX(-13deg);
+	position: absolute;
+	top: 0px;
+	right: 962px;
+	z-index: 2;
+	background: #333333;
+}
+
+.dire .right_act {
+	width: 1110px;
+	height: 897px;
+	transform: skewX(-13deg);
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	z-index: 2;
+	background: #333333;
+}
+
+.dire .text_left {
+	width: 590px;
+	height: 615px;
+	position: absolute;
+	top: 90px;
+	left: 160px;
+	color: white;
+}
+
+.dire .text_right {
+	width: 590px;
+	height: 615px;
+	position: absolute;
+	top: 90px;
+	right: 160px;
+	color: white;
+}
+
+.dire .text_left .top_line {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 20px;
+	height: 4px;
+	background: red;
+}
+
+.dire .text_left .down_line {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 150px;
+	height: 8px;
+	background: black;
+}
+
+.dire .text_right .top_line {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 20px;
+	height: 4px;
+	background: red;
+}
+
+.dire .text_right .down_line {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 150px;
+	height: 8px;
+	background: black;
+}
+
+.dire h1 {
+	font-size: 100px;
+}
+
+.dire .text_left h1 {
+	text-align: left;
+}
+
+.dire .text_right h1 {
+	text-align: right;
+}
+
+.dire .big {
+	margin-top: 105px;
+	margin-bottom: 30px;
+}
+
+.dire .ctext p {
+	width: 400px;
+	color: #818181;
+}
+
+.dire .text_right p {
+	text-align: right;
+	position: absolute;
+	right: 0px;
+	bottom: 80px;
+}
+
+.dire .text_left p {
+	text-align: left;
+	position: absolute;
+	left: 0px;
+	bottom: 80px;
+}
+
+.awards {
+	position: relative;
+	width: 100%;
+	height: 935px;
+	background: url(img/bg-pattern.gif);
+	display: none;
+}
+
+.awards .up {
+	width: 705px;
+	height: 0px;
+	font-size: 90px;
+	color: #2f2f2f;
+	letter-spacing: 2px;
+	line-height: 2em;
+	position: absolute;
+	bottom: 200px;
+	left: 50%;
+	overflow: hidden;
+}
+
+.awards .up div {
+	position: absolute;
+	bottom: 50px;
+	left: 0px;
+	height: 220px;
+}
+
+.awards .up span {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 20px;
+	background: #2f2f2f;
+}
+
+.awards .number {
+	position: absolute;
+	top: 188px;
+	left: 200px;
+	color: red;
+	font-size: 215px;
+	overflow: hidden;
+	height: 283px;
+	width: 408px;
+}
+
+.awards .number li {
+	float: left;
+	list-style: none;
+	margin-left: 10px;
+}
+
+.awards .logo {
+	position: absolute;
+	bottom: 100px;
+	left: 207px;
+}
+
+.awards .logo p {
+	width: 200px;
+	height: 200px;
+}
+
+.awards .logo li {
+	float: left;
+	list-style: none;
+	margin-left: 60px;
+	height: 250px;
+	border-bottom: 1px solid red;
+	position: relative;
+}
+
+.awards .logo li h1 {
+	position: absolute;
+	bottom: -50px;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	color: red;
+}
+
+.awards .logo .li1 p {
+	background: url(img/spritesheet-black.png) no-repeat;
+}
+
+.awards .logo .li2 p {
+	background: url(img/spritesheet-black.png) 215px 8px;
+}
+
+.awards .logo .li3 p {
+	background: url(img/spritesheet-black.png) 420px 0px;
+}
+
+.awards .logo .li4 p {
+	background: url(img/spritesheet-black.png) 205px 650px;
+}
+
+.awards .logo .li5 p {
+	background: url(img/spritesheet-black.png) 625px 645px;
+}
+
+.about {
+	position: relative;
+	width: 100%;
+	height: 935px;
+	background: url(img/background-top.jpg);
+	display: none;
+}
+
+.about .about_ps {
+	position: absolute;
+	top: 200px;
+	left: 150px;
+	width: 915.5px;
+	height: 610.5px;
+}
+
+.about .about_ps h1 {
+	color: white;
+	width: 505px;
+	font-size: 37px;
+}
+
+.about .about_ps .ps_red {
+	color: #f60;
+}
+
+.about .about_ps p {
+	color: #E6E6E6;
+	margin-top: 40px;
+	line-height: 28px;
+	font-size: 13px;
+}
+
+.contact {
+	width: 1920px;
+	position: relative;
+	display: none;
+}
+
+.contact .nav {
+	background: black;
+	color: #C7C7C7;
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	height: 50px;
+	width: 100%;
+	z-index: 5;
+}
+
+.contact .nav li {
+	list-style: none;
+	height: 50px;
+	float: left;
+	margin-left: 26px;
+	width: 85px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+	transform: scaleY(1.5);
+	position: relative;
+}
+
+.contact .nav li span {
+	position: absolute;
+	top: 39px;
+	left: 0px;
+	width: 85px;
+	height: 3px;
+}
+
+.contact .nav li:hover {
+	cursor: pointer;
+}
+
+.contact .content {
+	width: 100%;
+	height: 940px;
+	background: url(img/bg-pattern.gif);
+	position: relative;
+}
+
+.contact .content .con_ul {
+	width: 1200px;
+	height: 450px;
+	position: absolute;
+	top: 200px;
+	left: 350px;
+}
+
+.contact .content .con_ul li {
+	list-style: none;
+	float: left;
+	width: 245px;
+	height: 450px;
+	margin-left: 100px;
+}
+
+.contact .content .con_ul li h1 {
+	width: 0px;
+	height: 0px;
+	position: relative;
+	border-bottom: 8px solid black;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.contact .content .con_ul li span {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: -11px;
+	font-size: 130px;
+	transform: scaleY(1.7);
+	text-align: left;
+	overflow: hidden;
+}
+
+.contact .content .con_ul li h2 {
+	margin-bottom: 20px;
+	font-size: 27px;
+	transform: scaleY(1.1);
+	color: red;
+	letter-spacing: 2px;
+}
+
+.contact .content .con_ul li a {
+	display: block;
+	text-decoration: none;
+	width: 130px;
+	height: 40px;
+	color: white;
+	background: black;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.contact .content .con_ul li a:hover {
+	background: green;
+}
+
+.contact .content .con_ul li h4 {
+	margin-top: 10px;
+}
+
+.contact .content .as_ul {
+	width: 1200px;
+	position: absolute;
+	bottom: 150px;
+	left: 350px;
+}
+
+.contact .content .as_ul li {
+	width: 245px;
+	height: 30px;
+	border-top: 1px solid black;
+	padding-top: 10px;
+	float: left;
+	list-style: none;
+	text-indent: 20px;
+	margin-left: 100px;
+}
+
+.contact .content .as_ul li:nth-child(1) {
+	background: url(img/social_tw_btn.png) no-repeat 0px 14px;
+}
+
+.contact .content .as_ul li:nth-child(2) {
+	background: url(img/social_fb_btn.png) no-repeat 0px 14px;
+}
+
+.contact .content .as_ul li:nth-child(3) {
+	background: url(img/social_vi_btn.png) no-repeat 0px 14px;
+}
+
+.contact .content .as_ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.contact .con_text {
+	width: 100%;
+	height: 820px;
+	background: black;
+}
+
+.contact .con_text .text_box {
+	width: 1200px;
+	height: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.contact .con_text .text_box h1 {
+	margin-top: 70px;
+	color: #e74c4c;
+}
+
+.contact .con_text .text_box .line1,
+.contact .con_text .text_box .line2 {
+	float: left;
+	background: #C7C7C7;
+	width: 300px;
+	height: 2px;
+}
+
+.contact .con_text .text_box .line1 {
+	height: 4px;
+	margin-top: 38px;
+}
+
+.contact .con_text .text_box .line2 {
+	width: 895px;
+	margin-top: 40px;
+	margin-left: 5px;
+}
+
+.contact .con_text .text_box ul {
+	margin-top: 40px;
+}
+
+.contact .con_text .text_box ul li {
+	list-style: none;
+	width: 300px;
+	height: 230px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+	float: left;
+}
+
+.contact .con_text .text_box ul li h2 {
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 20px;
+}
+
+.contact .con_text .text_box ul li h3 {
+	color: #e74c4c;
+	margin: 20px 15px 0 -2px;
+	text-transform: uppercase;
+	font-size: 14px;
+	width: 250px;
+}
+
+.contact .con_text .text_box ul li h4 {
+	color: green;
+	margin-top: 20px;
+}
+
+.repeat-imgs {
+	width: 100%;
+	height: 935px;
+	overflow: hidden;
+	position: relative;
+}
+
+.repeat-imgs .repeat-lis {
+	width: 4800px;
+	height: 915px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+
+.repeat-imgs .repeat-lis li {
+	list-style: none;
+	float: left;
+	position: absolute;
+	width: 400px;
+	height: 1080px;
+}
+
+.repeat-imgs .repeat-lis li img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.repeat-imgs .repeat-lis li p {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: red;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+}
+
+.repeat-imgs .repeat-lis li p span {
+	position: absolute;
+	bottom: 300px;
+	left: 50px;
+}
+
+.repeat-imgs .repeat-lis li p span a {
+	display: block;
+	text-decoration: none;
+	color: red;
+	text-transform: uppercase;
+}
+
+.repeat-imgs .repeat-lis li p:hover {
+	cursor: pointer;
+	background: rgba(0, 0, 0, .1) !important;
+}
+
+.repeat-imgs .line {
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background: black;
+	z-index: 2;
+}
+
+.repeat-imgs .line span {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 150px;
+	height: 20px;
+	background: red;
+	z-index: 25;
+}
